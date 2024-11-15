@@ -1,3 +1,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+    @font-face {
+		font-family: "Arial Rounded MT Bold";
+		src: url("/fonts/arialroundedmtbold.ttf");
+		font-weight: bold;
+		font-style: normal;
+	}
+}
