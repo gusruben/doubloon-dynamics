@@ -23,13 +23,13 @@
 
 </script>
 
-<a class="text-white absolute top-5 right-5 z-10 underline" href="/">Matchup Calculator</a>
+<a class="text-white absolute top-10 right-10 z-10 underline text-2xl" href="/">Matchup Calculator</a>
 
 <div class="fixed inset-0 bg-[url(/background.svg)] bg-cover">
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-7
                 text-center text-white">
         <h1 class="text-5xl font-bold w-max">Point Difference → Rating Change</h1>
-        <table class="text-3xl bg-[url(/howtobacks.svg)] p-4 bg-cover bg-center bg-no-repeat table-fixed w-max mx-auto border-spacing-x-3 border-separate">
+        <table class="text-3xl bg-[url(/howtobacks.svg)] px-4 py-8 bg-cover bg-center bg-no-repeat table-fixed w-max mx-auto border-spacing-x-3 border-separate">
             <tbody>
                 {#each ranges as range, i}
                     <tr>

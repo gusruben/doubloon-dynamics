@@ -1,38 +1,27 @@
-# sv
+# Doubloon Dynamics
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Creating a project
+**Doubloon Dynamics** is a tool for calculating how High Seas (and other past & future Hack Club programs) projects will match up against each other when voting. Currently it includes 2 tools: a matchup calculator and a table of how matchups work.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## How ELO Works
 
-```bash
-# create a new project in the current directory
-npx sv create
+High Seas stores an [ELO](https://en.wikipedia.org/wiki/Elo_rating_system) (a sort of rating) for every single ship. ELO starts off at 1100, but this increases or decreases due to positive or negative votes. The ELO of the opposing project also counts, for example: if one project has a very high ELO (i.e. it's a good project), and another project beats it, the other project will gain more than if it beat a project with a low ELO.
 
-# create a new project in my-app
-npx sv create my-app
+### ELO Formula
+
+```math
+R'_w = R_w + K(1 - \frac{1}{1 + 10^{(R_l - R_w)/400}})
+```
+```math
+R'_l = R_l + K(0 - (1 - \frac{1}{1 + 10^{(R_l - R_w)/400}}))
 ```
 
-## Developing
+Where $`R_w`$ is the score of the project that won the vote and $`R_l`$ is the score of the project that lost the vote.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Matchup Calculator
 
-```bash
-npm run dev
+The matchup calculator takes in the ELO of 2 projects and uses the algorithm from High Seas to calculate the *new* ELO of both projects.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Rating Change Table
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The rating change table shows how the difference in ELO of 2 projects affects the resulting ELO change. Each row on the table represents a difference in ELO, along with a corresponding change in ELO. The winning project *gains* that amount of ELO and the losing project *loses* that amount of ELO.

@@ -25,7 +25,7 @@
     }
 </script>
 
-<a class="text-white absolute top-5 right-5 z-10 underline" href="/rankings">Rating Change Table</a>
+<a class="text-white absolute top-10 right-10 z-10 underline text-2xl" href="/rankings">Rating Change Table</a>
 
 <div class="fixed inset-0 bg-[url(/background.svg)] bg-cover">
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-7
