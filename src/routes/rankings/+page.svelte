@@ -51,4 +51,6 @@
         </div> -->
         <p class="text-2xl">Curious about what this is? Check out the <a href="https://github.com/gusruben/doubloon-dynamics/blob/main/README.md" class="underline text-[#b16284]">README</a>.</p>
     </div>
+
+    <a class="absolute right-16 bottom-8 text-2xl underline text-[#164a75]" href="https://github.com/gusruben/doubloon-dynamics">Source Code</a>
 </div>
