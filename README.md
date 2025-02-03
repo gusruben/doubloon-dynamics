@@ -3,6 +3,8 @@
 
 **Doubloon Dynamics** is a tool for calculating how High Seas (and other past & future Hack Club programs) projects will match up against each other when voting. Currently it includes 2 tools: a matchup calculator and a table of how matchups work.
 
+The site is currently live at [doubloon-dynamics.gus.ink](https://doubloon-dynamics.gus.ink/)!
+
 ## How ELO Works
 
 High Seas stores an [ELO](https://en.wikipedia.org/wiki/Elo_rating_system) (a sort of rating) for every single ship. ELO starts off at 1100, but this increases or decreases due to positive or negative votes. The ELO of the opposing project also counts, for example: if one project has a very high ELO (i.e. it's a good project), and another project beats it, the other project will gain more than if it beat a project with a low ELO.
