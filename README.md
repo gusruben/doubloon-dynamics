@@ -22,6 +22,10 @@ Where $`R_w`$ is the score of the project that won the vote and $`R_l`$ is the s
 
 The matchup calculator takes in the ELO of 2 projects and uses the algorithm from High Seas to calculate the *new* ELO of both projects.
 
+![image](https://github.com/user-attachments/assets/b40468d1-02a2-4bda-a174-bd87afb47bb5)
+
 ## Rating Change Table
 
 The rating change table shows how the difference in ELO of 2 projects affects the resulting ELO change. Each row on the table represents a difference in ELO, along with a corresponding change in ELO. The winning project *gains* that amount of ELO and the losing project *loses* that amount of ELO.
+
+![image](https://github.com/user-attachments/assets/28d1eed8-24b5-4ae9-8c7b-e36381a354a3)
