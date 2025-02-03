@@ -49,5 +49,6 @@
                 {range[0]}
             {/each}
         </div> -->
+        <p class="text-2xl">Curious about what this is? Check out the <a href="https://github.com/gusruben/doubloon-dynamics/blob/main/README.md" class="underline text-[#b16284]">README</a>.</p>
     </div>
 </div>

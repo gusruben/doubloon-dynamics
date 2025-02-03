@@ -64,5 +64,7 @@
             <!-- <p class="mt-5 text-3xl">Winner Rating: <span class="bg-[#834037] p-3">{rating}</span></p> -->
             <!-- <p class="mt-5 text-3xl">Loser Rating: <span class="bg-[#834037] p-3">{rating}</span></p> -->
         {/if}
+
+        <p class="text-2xl">Curious about what this is? Check out the <a href="https://github.com/gusruben/doubloon-dynamics/blob/main/README.md" class="underline text-[#b16284]">README</a>.</p>
     </div>
 </div>
